@@ -1,0 +1,72 @@
+.blog_item
+	background-color: #f5f5f5
+	padding: 13rem 0 10rem
+	@media screen and (max-width: 767px)
+		padding: 3rem 0
+	.container
+		max-width: 117rem
+		width: 100%
+	.wrp_items
+		display: flex
+		flex-wrap: wrap
+		@media screen and (max-width: 1167px)
+			flex-wrap: wrap
+			justify-content: center
+		@media screen and (max-width: 781px)
+			flex-direction: column
+			align-items: center
+	.item
+		width: calc((100% / 3) - 2.8rem)
+		background-color: #ffffff
+		margin-bottom: 2rem
+		@media screen and (max-width: 991px)
+			width: calc((100% / 2) - 2.8rem)
+			max-width: 36.1rem
+		@media screen and (max-width: 767px)
+			width: 100%
+		&:not(:nth-child(3n+3))
+			margin-right: 4.2rem
+			@media screen and (max-width: 991px)
+				margin-right: initial
+		&:nth-child(even)
+			@media screen and (max-width: 991px)
+				margin-left: 2rem
+			@media screen and (max-width: 781px)
+				margin-left: 0
+		.item_img
+			img
+				@media screen and (max-width: 991px)
+					display: block
+					margin: 0 auto
+		.item_text
+			padding: 3rem 2.5rem 5rem
+			h4
+				color: var(--color-primary)
+				font-size: 2.5rem
+				font-weight: 400
+				line-height: 3.6rem
+			time
+				color: #737373
+				font-size: 1.2rem
+				font-weight: 400
+				line-height: 1.8rem
+			.item_description
+				color: #747474
+				font-size: 1.5rem
+				font-weight: 400
+				line-height: 3.4rem
+				padding-top: 2rem
+				border-top: .1rem solid #e9e7e7
+				margin-top: 2rem
+	.read_more
+		margin-top: 8rem
+		color: var(--color-primary)
+		font-family: "Myriad Pro"
+		font-size: 1.4rem
+		font-weight: 400
+		text-transform: uppercase
+		max-width: 10.5rem
+		margin: 8rem auto 0
+		display: block
+		&:hover
+			color: var(--color-subprimary)

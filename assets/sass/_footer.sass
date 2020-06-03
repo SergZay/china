@@ -1,0 +1,52 @@
+footer
+	background-color: #232323
+	border-top: 1.2rem solid #414141
+	padding: 4.4rem 0 2rem
+	.container
+		max-width: 170rem
+		width: 100%
+	.wrp_logo_sidebars
+		display: flex
+		justify-content: space-between
+		@media screen and (max-width: 425px)
+			flex-direction: column
+		.wrp_sidebars
+			display: flex
+			justify-content: space-between
+			@media screen and (max-width: 767px)
+				flex-direction: column
+			.item
+				&:not(:last-of-type)
+					margin-right: 3rem
+					@media screen and (max-width: 767px)
+						margin-right: 0
+				@media screen and (max-width: 767px)
+					margin-bottom: 2rem
+			ul
+				list-style-type: none
+				li
+				a
+					color: #ffffff
+					font-size: 1.4rem
+					font-weight: 300
+					line-height: 2.4rem
+					text-transform: uppercase
+	.wrp_social_copyright
+		display: flex
+		justify-content: space-between
+		border-top: .1rem solid #12cdd4
+		padding-top: 2rem
+		margin-top: 3.8rem
+		@media screen and (max-width: 425px)
+			flex-direction: column
+		.social
+			list-style-type: none
+			display: flex
+			li
+				&:not(:last-of-type)
+					margin-right: 2rem
+		.copyright
+			color: #ffffff
+			font-size: 1rem
+			font-weight: 300
+			text-transform: uppercase
